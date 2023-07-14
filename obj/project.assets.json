@@ -11998,7 +11998,6 @@
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
       "CommunityToolkit.Mvvm",
-      "Microsoft.Maui.Controls",
       "Microsoft.Maui.Dependencies >= 6.0.553",
       "Microsoft.Maui.Extensions >= 6.0.553"
     ]
@@ -12042,10 +12041,6 @@
         "targetAlias": "net6.0-android",
         "dependencies": {
           "CommunityToolkit.Mvvm": {
-            "target": "Package",
-            "version": "(, )"
-          },
-          "Microsoft.Maui.Controls": {
             "target": "Package",
             "version": "(, )"
           },
@@ -12115,29 +12110,6 @@
       "libraryId": "CommunityToolkit.Mvvm",
       "targetGraphs": [
         ".NETCoreApp,Version=v6.0"
-      ]
-    },
-    {
-      "code": "NU1604",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Project dependency Microsoft.Maui.Controls does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
-      "libraryId": "Microsoft.Maui.Controls",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v6.0"
-      ]
-    },
-    {
-      "code": "NU1103",
-      "level": "Error",
-      "message": "Unable to find a stable package Microsoft.Maui.Controls with version \n  - Found 9 version(s) in nuget.org [ Nearest version: 8.0.0-preview.6.8686 ]\n  - Found 0 version(s) in /home/kirwakelvin/.dotnet/library-packs",
-      "libraryId": "Microsoft.Maui.Controls",
-      "targetGraphs": [
-        "net6.0-android31.0",
-        "net6.0-android31.0/android-arm",
-        "net6.0-android31.0/android-arm64",
-        "net6.0-android31.0/android-x64",
-        "net6.0-android31.0/android-x86"
       ]
     }
   ]

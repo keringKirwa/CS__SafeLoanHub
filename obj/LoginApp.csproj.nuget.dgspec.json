@@ -43,10 +43,6 @@
               "target": "Package",
               "version": "(, )"
             },
-            "Microsoft.Maui.Controls": {
-              "target": "Package",
-              "version": "(, )"
-            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.553, )",

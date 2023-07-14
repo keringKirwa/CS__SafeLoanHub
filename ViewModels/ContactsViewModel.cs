@@ -1,41 +1,38 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using CommunityToolkit.Mvvm.ComponentModel;
+using LoginApp.Models;
+
 
 namespace LoginApp.ViewModels;
 
-public class ContactsViewModel : ObservableObject
+public sealed class ContactsViewModel : INotifyPropertyChanged
 {
-    public event PropertyChangedEventHandler PropertyChanged;
+    private ObservableCollection<ApplicationContact> _appContacts;
 
-    private ObservableCollection<Contact> _contacts;
-    
-
-    private ObservableCollection<Contact> Contacts
+    public ObservableCollection<ApplicationContact> ApplicationContacts
     {
-        get => _contacts;
+        get => _appContacts; 
         set
         {
-            _contacts = value;
+            _appContacts = value;
             OnPropertyChanged(nameof(Contacts));
         }
     }
     
-    
-    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    public void AddContact(ApplicationContact contact)
+    {
+        ApplicationContacts.Add(contact);
+    }
+
+    public void RemoveContact(ApplicationContact contact)
+    {
+        ApplicationContacts.Remove(contact);
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void OnPropertyChanged(string propertyName)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
-    
-    public void AddContact(Contact contact)
-    {
-        Contacts.Add(contact);
-    }
-
-    public void RemoveContact(Contact contact)
-    {
-        Contacts.Remove(contact);
-    }
-    
 }

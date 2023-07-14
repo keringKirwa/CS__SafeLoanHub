@@ -21,17 +21,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/home/kirwakelvin/RiderProjects/LoginApp/MainPage.xaml]
+[/home/kirwakelvin/RiderProjects/LoginApp/Pages/ContactsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.MainPage.xaml
-build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
-build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
-[/home/kirwakelvin/RiderProjects/LoginApp/Pages/MyPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Pages.MyPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Pages/MyPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Pages/MyPage.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LoginApp.Pages.ContactsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages/ContactsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages/ContactsPage.xaml
 
 [/home/kirwakelvin/RiderProjects/LoginApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
