@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6zjVjfzhbq03biusqnbscaYz1uAdzDJoqUSN1C5Bd6Q8VRySt9XD2IBjMlvQbguX3IN2rwgeDFkyiWHVvooBmg==",
-  "success": true,
+  "dgSpecHash": "SwVXyfqkLx9NoANtVSEIY9NGnbh/SScDJmRtM6ArOtZkONeFtQY8pa9lid/o626LjQh/DEmqtYRfbiYicW4P+w==",
+  "success": false,
   "projectFilePath": "/home/kirwakelvin/RiderProjects/LoginApp/LoginApp.csproj",
   "expectedPackageFiles": [
+    "/home/kirwakelvin/.nuget/packages/communitytoolkit.mvvm/7.0.1/communitytoolkit.mvvm.7.0.1.nupkg.sha512",
     "/home/kirwakelvin/.nuget/packages/googlegson/2.9.0.1/googlegson.2.9.0.1.nupkg.sha512",
     "/home/kirwakelvin/.nuget/packages/microsoft.extensions.configuration/6.0.1/microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "/home/kirwakelvin/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0/microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -100,5 +101,39 @@
     "/home/kirwakelvin/.nuget/packages/xamarin.kotlinx.coroutines.android/1.6.0.1/xamarin.kotlinx.coroutines.android.1.6.0.1.nupkg.sha512",
     "/home/kirwakelvin/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.6.0.1/xamarin.kotlinx.coroutines.core.jvm.1.6.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency CommunityToolkit.Mvvm does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "CommunityToolkit.Mvvm",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency Microsoft.Maui.Controls does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1103",
+      "level": "Error",
+      "message": "Unable to find a stable package Microsoft.Maui.Controls with version \n  - Found 9 version(s) in nuget.org [ Nearest version: 8.0.0-preview.6.8686 ]\n  - Found 0 version(s) in /home/kirwakelvin/.dotnet/library-packs",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net6.0-android31.0",
+        "net6.0-android31.0/android-arm",
+        "net6.0-android31.0/android-arm64",
+        "net6.0-android31.0/android-x64",
+        "net6.0-android31.0/android-x86"
+      ]
+    }
+  ]
 }

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0-android31.0": {
+      "CommunityToolkit.Mvvm/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -1946,6 +1959,19 @@
       }
     },
     "net6.0-android31.0/android-arm": {
+      "CommunityToolkit.Mvvm/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -3890,6 +3916,19 @@
       }
     },
     "net6.0-android31.0/android-arm64": {
+      "CommunityToolkit.Mvvm/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -5834,6 +5873,19 @@
       }
     },
     "net6.0-android31.0/android-x64": {
+      "CommunityToolkit.Mvvm/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -7778,6 +7830,19 @@
       }
     },
     "net6.0-android31.0/android-x86": {
+      "CommunityToolkit.Mvvm/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.0.1": {
         "type": "package",
         "compile": {
@@ -9723,6 +9788,28 @@
     }
   },
   "libraries": {
+    "CommunityToolkit.Mvvm/7.0.1": {
+      "sha512": "ZIQV70D/oTD0Yu1c6IC1sxxnAmFykaM/yuVrv8s/s5uUdyiBhYvvgQsOkHh0nqx6ohOqlh6Wiot6Q05Dt8UrCw==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "communitytoolkit.mvvm.7.0.1.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "images/nuget.png",
+        "lib/net5.0/CommunityToolkit.Mvvm.dll",
+        "lib/net5.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net5.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml",
+        "license.md"
+      ]
+    },
     "GoogleGson/2.9.0.1": {
       "sha512": "hztMZzgzX82HUORHX4YHOcfzF7yAOn8dWpXeYcrJa9sjw1qHfFpibrHeiWrk8aKn4C4IO6mBNOuaFiyS6/EOBA==",
       "type": "package",
@@ -11910,6 +11997,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
+      "CommunityToolkit.Mvvm",
+      "Microsoft.Maui.Controls",
       "Microsoft.Maui.Dependencies >= 6.0.553",
       "Microsoft.Maui.Extensions >= 6.0.553"
     ]
@@ -11952,6 +12041,14 @@
       "net6.0-android31.0": {
         "targetAlias": "net6.0-android",
         "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "(, )"
+          },
+          "Microsoft.Maui.Controls": {
+            "target": "Package",
+            "version": "(, )"
+          },
           "Microsoft.Maui.Dependencies": {
             "target": "Package",
             "version": "[6.0.553, )",
@@ -12008,5 +12105,40 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency CommunityToolkit.Mvvm does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "CommunityToolkit.Mvvm",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency Microsoft.Maui.Controls does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v6.0"
+      ]
+    },
+    {
+      "code": "NU1103",
+      "level": "Error",
+      "message": "Unable to find a stable package Microsoft.Maui.Controls with version \n  - Found 9 version(s) in nuget.org [ Nearest version: 8.0.0-preview.6.8686 ]\n  - Found 0 version(s) in /home/kirwakelvin/.dotnet/library-packs",
+      "libraryId": "Microsoft.Maui.Controls",
+      "targetGraphs": [
+        "net6.0-android31.0",
+        "net6.0-android31.0/android-arm",
+        "net6.0-android31.0/android-arm64",
+        "net6.0-android31.0/android-x64",
+        "net6.0-android31.0/android-x86"
+      ]
+    }
+  ]
 }
